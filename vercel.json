@@ -67,8 +67,6 @@
       "src": "/(.*)",
       "dest": "/public/index.html"
     }
+    cleanUrls = true
   ]
-  {
-    "cleanUrls": true
-  }
 }
