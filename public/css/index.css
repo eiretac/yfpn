@@ -160,7 +160,6 @@ footer {
     margin-bottom: 20px;
 }
 
-
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -169,10 +168,16 @@ footer {
     margin: 0 auto;
 }
 
-/* Repeating footer styles */
+/* Footer Sections */
+.footer-section {
+    flex: 1 1 250px; /* Allow footer sections to grow and shrink with a minimum width */
+    margin-bottom: 20px;
+}
+
+/* Footer Links */
 .footer-links {
-    list-style: none; /* Remove bullets */
-    padding: 0; /* Remove any default padding */
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
@@ -180,23 +185,27 @@ footer {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    display: inline-block; /* Keeps links aligned neatly */
+    display: block; /* Ensures each link is on a new line */
+    margin-bottom: 10px; /* Adds spacing between each link */
 }
 
 .footer-links a:hover {
-    text-decoration: underline; /* Simple hover effect */
+    text-decoration: underline;
 }
 
+/* Social Media Icons */
 .social-icons a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
+    margin-right: 10px; /* Space between icons */
 }
 
 .social-icons a:hover {
     color: #ffca2b;
 }
 
+/* Dark Mode Toggle */
 .dark-mode-toggle input[type="checkbox"] {
     transform: scale(1.2);
 }
