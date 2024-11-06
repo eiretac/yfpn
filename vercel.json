@@ -68,4 +68,7 @@
       "dest": "/public/index.html"
     }
   ]
+  {
+    "cleanUrls": true
+  }
 }
