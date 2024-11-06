@@ -145,6 +145,14 @@ footer {
     border-top: 2px solid #444;
 }
 
+/* Footer Logo */
+.footer-logo {
+    width: 120px; /* Adjusted width for a more balanced size */
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+
 .footer-content {
     display: flex;
     flex-wrap: wrap;
