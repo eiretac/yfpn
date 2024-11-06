@@ -11,73 +11,62 @@
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Modern Header -->
     <header>
-        <nav class="navbar" role="navigation" aria-labelledby="main-navbar" id="main-navbar">
+        <nav class="navbar">
             <div class="container">
-                <div class="navbar-header">
-                    <a href="#" class="navbar-logo">
-                        <img src="img/logo.png" alt="Youth Foreign Policy Network Logo" class="logo-img">
-                    </a>
-                </div>
-                <div class="navbar-menu" id="mainMenu">
-                    <h2 class="sr-only" id="mainMenu">Main navigation</h2>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#teams">Teams</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><a href="/pages/signin.html">Log in</a></li>
-                    </ul>
-                </div>
+                <a href="#" class="navbar-logo">
+                    <img src="img/logo.png" alt="Youth Foreign Policy Network Logo" class="logo-img">
+                </a>
+                <ul class="navbar-menu">
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#teams">Teams</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="/pages/signin.html">Log in</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container-fluid" id="main" role="main">
-        <section class="hero-banner" style="background-color: #00665C;">
-            <div class="container">
-                <div class="row">
-                    <!-- Left side: Mission statement -->
-                    <div class="col-md-8 col-sm-6">
-                        <h1 tabindex="0" style="color: #FFF;">
-                            Empowering Youth in Foreign Policy and Global Issues
-                        </h1>
-                        <p style="color: #FFF;">
-                            YFPN is dedicated to providing resources, fostering advocacy, and inspiring collaboration among young people on critical international topics.
-                        </p>
-                        <form action="/en/search/" method="GET" role="search" aria-label="Enter search term">
-                            <div class="input-group" style="width: 82%;">
-                                <input type="text" name="q" class="form-control input-lg no-radius" placeholder="Search resources...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary btn-lg no-radius" alt="Search button">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                        </form>
+    <!-- Hero Banner Section with Background Image -->
+    <section class="hero-banner" style="background-image: url('img/hero-banner.jpg'); background-size: cover; background-position: center; color: #FFF;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 tabindex="0">Empowering Youth in Global Policy</h1>
+                <p>YFPN is dedicated to providing resources, fostering advocacy, and amplifying youth voices on critical international topics.</p>
+                <form action="/en/search/" method="GET" role="search" aria-label="Enter search term" class="search-bar">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control input-lg no-radius" placeholder="Search resources...">
+                        <button class="btn btn-primary btn-lg no-radius">
+                            <i class="fas fa-search"></i> Search
+                        </button>
                     </div>
-
-                    <!-- Right side: Key Links -->
-                    <div class="col-md-4 col-sm-6">
-                        <h2 class="sr-only">Quick Links</h2>
-                        <ul aria-label="Key Links" class="key-links">
-                            <li><a href="#join">Join Us</a></li>
-                            <li><a href="#events">Upcoming Events</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                            <li><a href="#support">Support YFPN</a></li>
-                        </ul>
-                    </div>
-                </div>
+                </form>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Featured Article Section -->
-        <section class="featured-content container">
-            <h1>Highlighting Youth Voices in Global Policy</h1>
-            <p>Explore our latest insights and recommendations on pressing foreign policy issues, informed by youth perspectives and dedicated research.</p>
-        </section>
-    </main>
+    <!-- Latest News Section -->
+    <section class="latest-news container">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+            <article class="news-item">
+                <img src="img/news1.jpg" alt="News Image 1">
+                <h3>Global Youth Summit: Insights and Reflections</h3>
+                <p>An overview of the key discussions and takeaways from the recent Global Youth Summit on foreign policy.</p>
+            </article>
+            <article class="news-item">
+                <img src="img/news2.jpg" alt="News Image 2">
+                <h3>YFPN Launches New Initiative for Youth Advocacy</h3>
+                <p>Introducing YFPN’s new initiative to support youth advocacy in foreign policy and international relations.</p>
+            </article>
+            <article class="news-item">
+                <img src="img/news3.jpg" alt="News Image 3">
+                <h3>Meet the Youth Policy Committee</h3>
+                <p>Get to know the new members of our Youth Policy Committee, dedicated to influencing policy on a global scale.</p>
+            </article>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
@@ -111,19 +100,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
-        // Update header based on sign-in status
-        function updateHeader() {
-            const authLink = document.getElementById('auth-link');
-            const username = localStorage.getItem('username');
-            if (username) {
-                authLink.innerHTML = `<a href="/pages/logout.html">Welcome, ${username}</a>`;
-            } else {
-                authLink.innerHTML = '<a href="/pages/signin.html">Sign in</a>';
-            }
-        }
-        document.addEventListener('DOMContentLoaded', updateHeader);
-    </script>
     <script src="javascript/callback.js"></script>
 </body>
 </html>
