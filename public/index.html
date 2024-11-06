@@ -5,90 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youth Foreign Policy Network</title>
     <link rel="icon" href="img/logo.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="css/index.css"> <!-- Correct CSS path -->
+    <link rel="stylesheet" href="css/index.css"> <!-- CSS path -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="/javascript/theme.js" defer></script> <!-- Correct JS path -->
+    <script src="javascript/theme.js" defer></script> <!-- JS path -->
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
-        <nav class="navbar navbar-default" role="navigation" aria-labelledby="RebootSrMainMenuNav" id="main-navbar">
+        <nav class="navbar" role="navigation" aria-labelledby="main-navbar" id="main-navbar">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="#" navbar-logo-width="">
-                        <link rel="preload" as="image" href="/static/_reboot/_reboot_app/img/Image_Logo.png" fetchpriority="high">
-                        <img src="img/logo.png" alt="Youth Foreign Policy Network Logo">
+                    <a href="#" class="navbar-logo">
+                        <img src="img/logo.png" alt="Youth Foreign Policy Network Logo" class="logo-img">
                     </a>
                 </div>
-                <div class="collapse navbar-collapse" id="RebootMainMenu">
-                    <h2 class="sr-only" id="RebootSrMainMenuNav" style="color: #FFF;">
-                        Main navigation
-                    </h2>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/en/search/?sort_by=published_date&amp;type=press_releases">News</a></li>
-                        <li><a href="/en/help/departments/">Teams</a></li>
-                        <li><a href="/en/services/">Services</a></li>
-                        <li class="dropdown" style="border-left: 1px solid white">
-                            <a href="/pages/signin.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Log in <span class="caret"></span>
-                            </a>
-                            <div class="col-sm-12 col-xs-12 hidden-lg hidden-md margin-bottom-sm"></div>
-                        </li>
+                <div class="navbar-menu" id="mainMenu">
+                    <h2 class="sr-only" id="mainMenu">Main navigation</h2>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#teams">Teams</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="/pages/signin.html">Log in</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="container-fluid margin-bottom-xlg" id="main" role="main">
-        <div class="row search-container" style="background-color: #00665C;" reboot-jumbotron="">
+    <!-- Main Content -->
+    <main class="container-fluid" id="main" role="main">
+        <section class="hero-banner" style="background-color: #00665C;">
             <div class="container">
                 <div class="row">
-                    <!-- Left side: Search form -->
-                    <div class="col-md-8 col-sm-6 col-xs-12">
+                    <!-- Left side: Mission statement -->
+                    <div class="col-md-8 col-sm-6">
                         <h1 tabindex="0" style="color: #FFF;">
-                            Search for resources<br>and information
+                            Empowering Youth in Foreign Policy and Global Issues
                         </h1>
+                        <p style="color: #FFF;">
+                            YFPN is dedicated to providing resources, fostering advocacy, and inspiring collaboration among young people on critical international topics.
+                        </p>
                         <form action="/en/search/" method="GET" role="search" aria-label="Enter search term">
                             <div class="input-group" style="width: 82%;">
-                                <input type="text" name="q" value="" class="form-control input-lg no-radius" aria-label="Search input field" placeholder="Enter search term">
+                                <input type="text" name="q" class="form-control input-lg no-radius" placeholder="Search resources...">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-state-gold btn-lg no-radius" alt="Button: Search" onclick="removeTags();">
-                                        <img src="/img/Icon_Search.png" alt="Image: Search button"> <!-- Updated path for image -->
+                                    <button class="btn btn-primary btn-lg no-radius" alt="Search button">
+                                        <i class="fas fa-search"></i>
                                     </button>
                                 </span>
                             </div>
                         </form>
                     </div>
 
-                    <!-- Right side: Pinned items -->
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h2 class="sr-only" style="color: #FFF;">Pinned items</h2>
-                        <ul aria-label="Pinned items" reboot-site-list="">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#">=</a></li>
-                            <li><a href="#">=</a></li>
+                    <!-- Right side: Key Links -->
+                    <div class="col-md-4 col-sm-6">
+                        <h2 class="sr-only">Quick Links</h2>
+                        <ul aria-label="Key Links" class="key-links">
+                            <li><a href="#join">Join Us</a></li>
+                            <li><a href="#events">Upcoming Events</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#support">Support YFPN</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="container">
-        <h1>Trump's Second Term Poised to Reshape The World</h1>
-        <p>What the sigma</p>
-    </div>
+        <!-- Featured Article Section -->
+        <section class="featured-content container">
+            <h1>Highlighting Youth Voices in Global Policy</h1>
+            <p>Explore our latest insights and recommendations on pressing foreign policy issues, informed by youth perspectives and dedicated research.</p>
+        </section>
+    </main>
 
+    <!-- Footer Section -->
     <footer>
         <div class="footer-content">
             <div class="footer-left footer-section">
-                <img src="/img/logo.png" alt="Government of Ireland logo" class="footer-logo" />
+                <img src="img/logo.png" alt="Youth Foreign Policy Network Logo" class="footer-logo" />
                 <p>&copy; Youth Foreign Policy Network. All Rights Reserved</p>
             </div>
             <div class="footer-middle footer-section">
-                <h3>Company</h3>
+                <h3>About</h3>
                 <ul class="footer-links">
                     <li><a href="#careers">Careers</a></li>
                     <li><a href="#mediacentre">Media Centre</a></li>
@@ -97,10 +96,10 @@
                 </ul>
             </div>
             <div class="footer-right footer-section">
-                <h3>Connect with us</h3>
+                <h3>Connect with Us</h3>
                 <div class="social-icons">
-                    <a href="https://twitter.com/a"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://tiktok.com/@"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://twitter.com/yfpn"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com/@yfpn"><i class="fab fa-tiktok"></i></a>
                     <a href="https://instagram.com/youthforeignpolicynetwork/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -111,19 +110,18 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
-        // Updates the header with the user's name if signed in
+        // Update header based on sign-in status
         function updateHeader() {
             const authLink = document.getElementById('auth-link');
             const username = localStorage.getItem('username');
-
             if (username) {
-                authLink.innerHTML = <a href="/pages/logout.html">Welcome, ${username}</a>;
+                authLink.innerHTML = `<a href="/pages/logout.html">Welcome, ${username}</a>`;
             } else {
                 authLink.innerHTML = '<a href="/pages/signin.html">Sign in</a>';
             }
         }
-
         document.addEventListener('DOMContentLoaded', updateHeader);
     </script>
     <script src="javascript/callback.js"></script>
