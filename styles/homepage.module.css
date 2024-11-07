@@ -73,7 +73,7 @@
    background-color: #013033;
  }
  
- header {
+ .header {
    background-color: #004247;
    color: white;
    padding: 15px 0;
@@ -82,18 +82,18 @@
    z-index: 1000;
  }
  
- header a {
+ .header a {
    color: white;
    margin: 0 15px;
    font-weight: bold;
    font-size: 18px;
  }
  
- header a:hover {
+ .header a:hover {
    color: #013033;
  }
  
- footer {
+ .footer {
    background-color: #013033;
    color: white;
    padding: 40px 20px;
