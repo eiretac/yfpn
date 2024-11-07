@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className={styles.heroSection}>
-        <img src="/images/hero-image.jpg" alt="Youth engagement in global issues" />
+        <img src="./public/hero.png" alt="Youth engagement in global issues" />
         <div className={styles.heroText}>
           <h1>Join the Global Conversation</h1>
           <p>Be part of a dynamic network shaping the future of foreign policy.</p>
