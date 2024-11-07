@@ -20,23 +20,17 @@
    transform: translate(-50%, -50%);
  }
  
- .newsSection {
+ .newsSection, .journalsSection {
    padding: 50px 20px;
  }
  
- .newsSection h2 {
+ .newsSection h2, .journalsSection h2 {
    font-size: 2rem;
    margin-bottom: 20px;
  }
  
  .journalsSection {
-   padding: 50px 20px;
    background-color: #f4f4f4;
- }
- 
- .journalsSection h2 {
-   font-size: 2rem;
-   margin-bottom: 20px;
  }
  
  .grid-container {
@@ -67,7 +61,7 @@
    font-size: 1rem;
  }
  
- .cta-button {
+ .ctaButton {
    background-color: #004247;
    padding: 12px 24px;
    border-radius: 5px;
@@ -75,7 +69,34 @@
    transition: background-color 0.3s;
  }
  
- .cta-button:hover {
+ .ctaButton:hover {
    background-color: #013033;
+ }
+ 
+ header {
+   background-color: #004247;
+   color: white;
+   padding: 15px 0;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+ }
+ 
+ header a {
+   color: white;
+   margin: 0 15px;
+   font-weight: bold;
+   font-size: 18px;
+ }
+ 
+ header a:hover {
+   color: #013033;
+ }
+ 
+ footer {
+   background-color: #013033;
+   color: white;
+   padding: 40px 20px;
+   text-align: center;
  }
  

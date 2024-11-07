@@ -1,20 +1,34 @@
 // pages/index.js
-import Layout from '../components/Layout';
 import styles from '../styles/hompeage.module.css';
 
 export default function Home() {
   return (
-    <Layout>
+    <>
+      {/* Header */}
+      <header className={styles.header}>
+        <div className={styles.navContainer}>
+          <nav>
+            <a href="/">Home</a>
+            <a href="/journal">Journal</a>
+            <a href="/team">Team</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
       <section className={styles.heroSection}>
         <img src="/images/hero-image.jpg" alt="Youth engagement in global issues" />
         <div className={styles.heroText}>
           <h1>Join the Global Conversation</h1>
           <p>Be part of a dynamic network shaping the future of foreign policy.</p>
-          <button className="cta-button">Become a Member</button>
-          <button className="cta-button">Read Latest Articles</button>
+          <button className={styles.ctaButton}>Become a Member</button>
+          <button className={styles.ctaButton}>Read Latest Articles</button>
         </div>
       </section>
 
+      {/* News Section */}
       <section className={styles.newsSection}>
         <h2>Latest News</h2>
         <div className="grid-container">
@@ -31,6 +45,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Journals Section */}
       <section className={styles.journalsSection}>
         <h2>Latest Journals</h2>
         <div className="grid-container">
@@ -51,6 +66,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </Layout>
+
+      {/* Footer */}
+      <footer className={styles.footer}>
+        <p>&copy; 2024 Youth Foreign Policy Network. All rights reserved.</p>
+      </footer>
+    </>
   );
 }
