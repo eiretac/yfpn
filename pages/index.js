@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className={styles.heroSection}>
-        <img src="./public/hero.png" alt="Youth engagement in global issues" />
+        <img src="https://media.discordapp.net/attachments/1246450019964551199/1304196640412008610/website-resolution-1-1752x784.png?ex=672e8345&is=672d31c5&hm=69669f59274a4af08dd3c07f73252dac4fe4acb9e6e3d0bbf5e75de12ca30220&=&format=webp&quality=lossless&width=1440&height=644" alt="Youth engagement in global issues" />
         <div className={styles.heroText}>
           <h1>Join the Global Conversation</h1>
           <p>Be part of a dynamic network shaping the future of foreign policy.</p>
