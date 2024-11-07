@@ -1,0 +1,40 @@
+/* components/PrivacyPolicy.module.css */
+
+.privacyPolicy {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  .privacyTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin-bottom: 24px;
+  }
+  
+  .section {
+    margin-bottom: 24px;
+  }
+  
+  .toggleTitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #005c5c; /* Adjust color to match a modern, accessible style */
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+  
+  .toggleTitle:hover {
+    color: #009e9e;
+  }
+  
+  .sectionContent {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 8px;
+    padding-left: 8px;
+  }
+  
