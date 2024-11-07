@@ -1,5 +1,6 @@
 // pages/index.js
 import styles from '../styles/homepage.module.css';
+import Footer from '../components/Footer.js';
 
 export default function Home() {
   return (
@@ -66,11 +67,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className={styles.footer}>
-        <p>&copy; 2024 Youth Foreign Policy Network. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }
