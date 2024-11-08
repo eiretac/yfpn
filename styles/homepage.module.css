@@ -1,10 +1,5 @@
 /* homepage.module.css */
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #004247;
-}
-
 /* Header */
 .header {
   display: flex;
