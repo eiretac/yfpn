@@ -7,41 +7,29 @@ export default function Home() {
     <>
       {/* Header */}
       <header className={styles.header}>
-        <div className={styles.logo}>Youth Forum</div>
-        <nav className={styles.navContainer}>
-          <a href="/">Home</a>
-          <a href="/events">Events</a>
-          <a href="/news">News</a>
-          <a href="/initiatives">Initiatives</a>
-          <a href="/about">About</a>
-          <a href="/join">Join Us</a>
-        </nav>
+        <div className={styles.logo}>Your Logo</div>
+        <div className={styles.navContainer}>
+          <nav>
+            <a href="/">Home</a>
+            <a href="/journal">Journal</a>
+            <a href="/team">Team</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
       </header>
 
       {/* Hero Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroText}>
-          <h1>Empowering </h1>
-          <p>Foreign Policy Is Amazing don't you think!</p>
-          <button className={styles.ctaButton}>Get Involved</button>
+          <h1>Join the Global Conversation</h1>
+          <p>Be part of a dynamic network shaping the future of foreign policy.</p>
+          <button className={styles.ctaButton}>Become a Member</button>
+          <button className={styles.ctaButton}>Read Latest Articles</button>
         </div>
-      </section>
-
-      {/* Events Section */}
-      <section className={styles.eventsSection}>
-        <h2>Upcoming Events</h2>
-        <div className={styles.gridContainer}>
-          <div className={styles.gridItem}>
-            <h3>i dont know</h3>
-            <p>yeah this event is really cool if you ask me</p>
-            <button>Learn More</button>
-          </div>
-          <div className={styles.gridItem}>
-            <h3>i dont know</h3>
-            <p>yeah this event is really cool if you ask me.</p>
-            <button>Learn More</button>
-          </div>
+        <div className={styles.heroMap}>
+          <img src="https://example.com/europe-asia-map.jpg" alt="Map of Europe and Asia" />
         </div>
       </section>
 
@@ -50,19 +38,53 @@ export default function Home() {
         <h2>Latest News</h2>
         <div className={styles.gridContainer}>
           <div className={styles.gridItem}>
-            <h3>Youth in Politics</h3>
-            <p>European youth leaders engage in shaping new policies...</p>
-            <button>Read More</button>
+            <img src="https://example.com/news-image1.jpg" alt="News Image 1" />
+            <div className={styles.gridItemContent}>
+              <h3>Global Youth Lead Climate Talks</h3>
+              <p>Young leaders are shaping the future of climate policy...</p>
+              <a href="/news1" className={styles.ctaButton}>Read More</a>
+            </div>
           </div>
           <div className={styles.gridItem}>
-            <h3>Empowering Youth in the Digital Age</h3>
-            <p>How digital tools are transforming youth engagement...</p>
-            <button>Read More</button>
+            <img src="https://example.com/news-image2.jpg" alt="News Image 2" />
+            <div className={styles.gridItemContent}>
+              <h3>Youth Discuss Role in UN Diplomacy</h3>
+              <p>How the youth are influencing international relations...</p>
+              <a href="/news2" className={styles.ctaButton}>Read More</a>
+            </div>
           </div>
+        </div>
+        <div className={styles.mapSection}>
+          <img src="https://example.com/africa-map.jpg" alt="Map of Africa" />
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Events Section */}
+      <section className={styles.eventsSection}>
+        <h2>Upcoming Events</h2>
+        <div className={styles.gridContainer}>
+          <div className={styles.gridItem}>
+            <img src="https://example.com/event-image1.jpg" alt="Event Image 1" />
+            <div className={styles.gridItemContent}>
+              <h3>Global Youth Summit</h3>
+              <p>Discuss and shape the future of policy with young leaders from around the world...</p>
+              <a href="/event1" className={styles.ctaButton}>Learn More</a>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://example.com/event-image2.jpg" alt="Event Image 2" />
+            <div className={styles.gridItemContent}>
+              <h3>Youth in Action Conference</h3>
+              <p>Join young minds from North and South America in driving change...</p>
+              <a href="/event2" className={styles.ctaButton}>Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div className={styles.mapSection}>
+          <img src="https://example.com/america-map.jpg" alt="Map of North and South America" />
+        </div>
+      </section>
+
       <Footer />
     </>
   );
