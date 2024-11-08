@@ -1,159 +1,119 @@
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 66, 71, 0.7); /* Same as hero overlay */
-  padding: 20px;
-  color: #ffffff;
-}
+/* homepage.module.css */
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: 'Montserrat Bold', sans-serif;
-}
-
-.navContainer {
-  display: flex;
-  gap: 20px;
-}
-
-.navContainer a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.navContainer a:hover {
-  color: #013033;
+.mainContent {
+  padding: 0 20px;
 }
 
 /* Hero Section */
 .heroSection {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
-  height: 60vh;
-  background-image: url('https://example.com/hero-image.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-}
-
-.heroOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 66, 71, 0.7);
+  padding: 60px 20px;
+  background-color: #004247;
+  color: white;
 }
 
 .heroText {
-  position: relative;
-  text-align: center;
-  width: 50%;
-}
-
-.heroMap {
-  width: 50%;
-  display: flex;
-  justify-content: center;
+  max-width: 50%;
 }
 
 .heroMap img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 
-/* CTA Button */
 .ctaButton {
-  background-color: #004247;
-  color: #ffffff;
-  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #004247;
+  padding: 12px 24px;
   border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-family: 'Montserrat Bold', sans-serif;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-  display: inline-block;
-  margin-top: 15px;
-  text-decoration: none;
 }
 
 .ctaButton:hover {
   background-color: #013033;
+  color: #ffffff;
 }
 
-/* News Section */
-.newsSection {
+/* Join Us Section */
+.joinUsSection {
   padding: 50px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* YFPN in Action */
+.yfpnSection {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.actionGrid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
 
-.newsSection h2 {
-  font-size: 2rem;
-  color: #004247;
-  margin-bottom: 30px;
-  font-family: 'Montserrat Bold', sans-serif;
+.actionItem {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.mapSection {
-  margin-top: 20px;
+/* Facts and Figures */
+.factsSection {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
 }
 
-.mapSection img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Grid Layout */
-.gridContainer {
+.factsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.gridItem {
+.factBox {
   background-color: #ffffff;
-  border: 1px solid #e6e6e6;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  transition: box-shadow 0.3s;
-}
-
-.gridItem:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.gridItem img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.gridItemContent {
   padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.gridItem h3 {
-  font-size: 1.3rem;
-  color: #004247;
-  margin-bottom: 15px;
-  font-family: 'Montserrat Bold', sans-serif;
+/* News and Journal Sections */
+.newsSection, .journalSection {
+  padding: 50px 20px;
 }
 
-.gridItem p {
-  font-size: 1rem;
-  color: #666666;
-  margin-bottom: 20px;
+.newsGrid, .journalGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.newsItem, .journalItem {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsItem button, .journalItem button {
+  background-color: #004247;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsItem button:hover, .journalItem button:hover {
+  background-color: #013033;
 }
