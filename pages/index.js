@@ -29,7 +29,7 @@ export default function Home() {
           <button className={styles.ctaButton}>Read Latest Articles</button>
         </div>
         <div className={styles.heroMap}>
-          <img src="https://example.com/europe-asia-map.jpg" alt="Map of Europe and Asia" />
+          <img src="https://cdn.vectorstock.com/i/preview-1x/93/42/hex-tile-eurasia-map-vector-21049342.jpg" alt="Map of Europe and Asia" />
         </div>
       </section>
 
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.mapSection}>
-          <img src="https://example.com/africa-map.jpg" alt="Map of Africa" />
+          <img src="https://cdn3.vectorstock.com/i/1000x1000/84/57/hex-tile-africa-map-vector-20858457.jpg" alt="Map of Africa" />
         </div>
       </section>
 
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.mapSection}>
-          <img src="https://example.com/america-map.jpg" alt="Map of North and South America" />
+          <img src=".public\yOUTH_FOREIGN_POLICY_NETWORK_1.png" alt="Map of North and South America" />
         </div>
       </section>
 
