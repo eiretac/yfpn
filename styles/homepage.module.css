@@ -3,19 +3,29 @@
 .mainContent {
   padding: 0 20px;
 }
-
 /* Hero Section */
 .heroSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 20px;
-  background-color: #004247;
-  color: white;
+  background-color: #e5f1fa; /* Light blue background color */
 }
 
 .heroText {
-  max-width: 50%;
+  max-width: 45%;
+}
+
+.heroText h1 {
+  font-size: 2.5rem;
+  color: #2e3a59; /* Darker blue for the headline */
+  font-weight: bold;
+}
+
+.heroText p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
 }
 
 .heroMap img {
@@ -23,10 +33,48 @@
   height: auto;
 }
 
-.ctaButton {
-  background-color: #ffffff;
-  color: #004247;
-  padding: 12px 24px;
+/* Join Us Section */
+.joinUsSection {
+  display: flex;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  align-items: center;
+}
+
+.joinUsImage img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.joinUsText {
+  max-width: 50%;
+}
+
+.joinLabel {
+  font-size: 1rem;
+  color: #ff5a5f; /* Pinkish color for the "Join us!" label */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.joinUsText h2 {
+  font-size: 1.8rem;
+  color: #2e3a59;
+  margin: 10px 0;
+}
+
+.joinUsText p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.readMoreButton {
+  background-color: #ffd23f; /* Yellow button background */
+  color: #2e3a59; /* Dark blue text color */
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -34,18 +82,9 @@
   transition: background-color 0.3s;
 }
 
-.ctaButton:hover {
-  background-color: #013033;
-  color: #ffffff;
+.readMoreButton:hover {
+  background-color: #ffc107; /* Darker yellow on hover */
 }
-
-/* Join Us Section */
-.joinUsSection {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #f4f4f4;
-}
-
 /* YFPN in Action */
 .yfpnSection {
   padding: 50px 20px;

@@ -8,24 +8,41 @@ export default function Home() {
     <>
       <Header />
       <main className={styles.mainContent}>
-        
+
         {/* Hero Section */}
         <section className={styles.heroSection}>
           <div className={styles.heroText}>
-            <h1>Join the Global Youth Network</h1>
-            <p>Empowering youth to shape the future of international policy.</p>
-            <button className={styles.ctaButton}>Become a Member</button>
+            <h1>Welcome to Young Europe!</h1>
+            <p>
+              The European Youth Parliament is one of Europe’s largest youth platforms for civic education,
+              intercultural encounters, and the exchange of ideas – run by young people, for young people. 
+              Our mission is to inspire and empower a young generation of informed, open-minded, responsible, 
+              and active citizens that shape society and drive impact.
+            </p>
           </div>
           <div className={styles.heroMap}>
-            <img src="https://example.com/world-map.png" alt="World map" />
+            <img src="/images/europe-map.png" alt="Geometric map of Europe" />
           </div>
         </section>
 
         {/* Join Us Section */}
         <section className={styles.joinUsSection}>
-          <h2>Why Join Us?</h2>
-          <p>Be part of a network that empowers youth to make a difference in global discussions on policy, environment, and human rights.</p>
+          <div className={styles.joinUsImage}>
+            <img src="/images/join-us-image.png" alt="Group of youth celebrating" />
+          </div>
+          <div className={styles.joinUsText}>
+            <span className={styles.joinLabel}>Join us!</span>
+            <h2>The EYP in your country</h2>
+            <p>
+              The European Youth Parliament, or in short, the EYP, offers its participants 
+              a transformational learning experience. Every year thousands of young people 
+              join our activities and become a part of one of the largest youth networks in Europe. 
+              Find out how to get involved with your national organization here!
+            </p>
+            <button className={styles.readMoreButton}>Read more</button>
+          </div>
         </section>
+
 
         {/* YFPN in Action */}
         <section className={styles.yfpnSection}>
