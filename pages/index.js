@@ -7,66 +7,62 @@ export default function Home() {
     <>
       {/* Header */}
       <header className={styles.header}>
-        <div className={styles.navContainer}>
-          <nav>
-            <a href="/">Home</a>
-            <a href="/journal">Journal</a>
-            <a href="/team">Team</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-          </nav>
-        </div>
+        <div className={styles.logo}>Youth Forum</div>
+        <nav className={styles.navContainer}>
+          <a href="/">Home</a>
+          <a href="/events">Events</a>
+          <a href="/news">News</a>
+          <a href="/initiatives">Initiatives</a>
+          <a href="/about">About</a>
+          <a href="/join">Join Us</a>
+        </nav>
       </header>
 
       {/* Hero Section */}
       <section className={styles.heroSection}>
-        <img src="https://media.discordapp.net/attachments/1246450019964551199/1304196640412008610/website-resolution-1-1752x784.png?ex=672e8345&is=672d31c5&hm=69669f59274a4af08dd3c07f73252dac4fe4acb9e6e3d0bbf5e75de12ca30220&=&format=webp&quality=lossless&width=1440&height=644" alt="Youth engagement in global issues" />
+        <div className={styles.heroOverlay}></div>
         <div className={styles.heroText}>
-          <h1>Join the Global Conversation</h1>
-          <p>Be part of a dynamic network shaping the future of foreign policy.</p>
-          <button className={styles.ctaButton}>Become a Member</button>
-          <button className={styles.ctaButton}>Read Latest Articles</button>
+          <h1>Empowering </h1>
+          <p>Foreign Policy Is Amazing don't you think!</p>
+          <button className={styles.ctaButton}>Get Involved</button>
+        </div>
+      </section>
+
+      {/* Events Section */}
+      <section className={styles.eventsSection}>
+        <h2>Upcoming Events</h2>
+        <div className={styles.gridContainer}>
+          <div className={styles.gridItem}>
+            <h3>i dont know</h3>
+            <p>yeah this event is really cool if you ask me</p>
+            <button>Learn More</button>
+          </div>
+          <div className={styles.gridItem}>
+            <h3>i dont know</h3>
+            <p>yeah this event is really cool if you ask me.</p>
+            <button>Learn More</button>
+          </div>
         </div>
       </section>
 
       {/* News Section */}
       <section className={styles.newsSection}>
         <h2>Latest News</h2>
-        <div className="grid-container">
-          <div className="grid-item">
-            <h3>Global Youth Lead Climate Talks</h3>
-            <p>Young leaders are shaping the future of climate policy...</p>
+        <div className={styles.gridContainer}>
+          <div className={styles.gridItem}>
+            <h3>Youth in Politics</h3>
+            <p>European youth leaders engage in shaping new policies...</p>
             <button>Read More</button>
           </div>
-          <div className="grid-item">
-            <h3>Youth Discuss Role in UN Diplomacy</h3>
-            <p>How the youth are influencing international relations...</p>
+          <div className={styles.gridItem}>
+            <h3>Empowering Youth in the Digital Age</h3>
+            <p>How digital tools are transforming youth engagement...</p>
             <button>Read More</button>
           </div>
         </div>
       </section>
 
-      {/* Journals Section */}
-      <section className={styles.journalsSection}>
-        <h2>Latest Journals</h2>
-        <div className="grid-container">
-          <div className="grid-item">
-            <h3>How Youth Are Impacting Global Trade</h3>
-            <p>Young minds are challenging the status quo in international trade...</p>
-            <button>Read Full Article</button>
-          </div>
-          <div className="grid-item">
-            <h3>Redefining Diplomacy: A Youth Perspective</h3>
-            <p>The next generation is pushing new boundaries in diplomacy...</p>
-            <button>Read Full Article</button>
-          </div>
-          <div className="grid-item">
-            <h3>The Future of Foreign Aid: Youth Leadership</h3>
-            <p>Exploring how youth leaders are shaping the future of foreign aid...</p>
-            <button>Read Full Article</button>
-          </div>
-        </div>
-      </section>
+      {/* Footer */}
       <Footer />
     </>
   );
