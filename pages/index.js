@@ -31,17 +31,23 @@ export default function Home() {
         <section className={styles.yfpnSection}>
           <h2>YFPN in Action</h2>
           <div className={styles.actionGrid}>
-            <div className={styles.actionItem}>
-              <h3>Workshops</h3>
-              <p>Interactive workshops on pressing global issues.</p>
+            <div className={styles.actionItem} style={{ backgroundColor: '#f76c6c' }}>
+              <div className={styles.actionImage}>
+                <img src="/images/action1.png" alt="Peer and civic education" />
+              </div>
+              <h3>Peer and Civic Education</h3>
             </div>
-            <div className={styles.actionItem}>
-              <h3>Debates</h3>
-              <p>Engaging debates on policy and social change.</p>
+            <div className={styles.actionItem} style={{ backgroundColor: '#ffd23f' }}>
+              <div className={styles.actionImage}>
+                <img src="/images/action2.png" alt="Personal growth" />
+              </div>
+              <h3>Personal Growth</h3>
             </div>
-            <div className={styles.actionItem}>
-              <h3>Projects</h3>
-              <p>Collaborative projects that make an impact.</p>
+            <div className={styles.actionItem} style={{ backgroundColor: '#333d4b' }}>
+              <div className={styles.actionImage}>
+                <img src="/images/action3.png" alt="Open forum for youth" />
+              </div>
+              <h3>Open Forum for Youth</h3>
             </div>
           </div>
         </section>
@@ -50,48 +56,29 @@ export default function Home() {
         <section className={styles.factsSection}>
           <h2>Facts and Figures</h2>
           <div className={styles.factsGrid}>
-            <div className={styles.factBox}>2000+ Members</div>
-            <div className={styles.factBox}>30+ Countries</div>
-            <div className={styles.factBox}>100+ Events Annually</div>
-            <div className={styles.factBox}>15 Ongoing Projects</div>
-            <div className={styles.factBox}>25 Partnerships</div>
-            <div className={styles.factBox}>50+ Workshops Held</div>
-            <div className={styles.factBox}>Global Impact</div>
-            <div className={styles.factBox}>Youth Leaders</div>
-            <div className={styles.factBox}>Policy Influence</div>
-          </div>
-        </section>
-
-        {/* News Section */}
-        <section className={styles.newsSection}>
-          <h2>Latest News</h2>
-          <div className={styles.newsGrid}>
-            <div className={styles.newsItem}>
-              <h3>Global Youth Summit 2024</h3>
-              <p>Bringing youth voices together for change.</p>
-              <button>Read More</button>
+            <div className={styles.factBox}>
+              <img src="/icons/map-icon.png" alt="Map Icon" />
+              <p>Represented in 40 countries across Europe</p>
             </div>
-            <div className={styles.newsItem}>
-              <h3>Climate Change Initiatives</h3>
-              <p>Youth-driven solutions for the environment.</p>
-              <button>Read More</button>
+            <div className={styles.factBox}>
+              <img src="/icons/people-icon.png" alt="People Icon" />
+              <p>Around 25,000 young people take part in our events every year</p>
             </div>
-          </div>
-        </section>
-
-        {/* Journal Section */}
-        <section className={styles.journalSection}>
-          <h2>Latest Journal Articles</h2>
-          <div className={styles.journalGrid}>
-            <div className={styles.journalItem}>
-              <h3>Insights into Youth Policy</h3>
-              <p>How youth influence policy decisions globally.</p>
-              <button>Read Full Article</button>
+            <div className={styles.factBox}>
+              <img src="/icons/calendar-icon.png" alt="Calendar Icon" />
+              <p>Active for more than 35 years, since 1987</p>
             </div>
-            <div className={styles.journalItem}>
-              <h3>The Future of Foreign Aid</h3>
-              <p>Exploring youth perspectives on international aid.</p>
-              <button>Read Full Article</button>
+            <div className={styles.factBox}>
+              <img src="/icons/patronage-icon.png" alt="Patronage Icon" />
+              <p>Under the patronage of EU leaders</p>
+            </div>
+            <div className={styles.factBox}>
+              <img src="/icons/events-icon.png" alt="Events Icon" />
+              <p>More than 400 events annually across Europe</p>
+            </div>
+            <div className={styles.factBox}>
+              <img src="/icons/alumni-icon.png" alt="Alumni Icon" />
+              <p>Alumni network of over 200,000 members</p>
             </div>
           </div>
         </section>

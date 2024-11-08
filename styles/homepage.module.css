@@ -59,10 +59,33 @@
 }
 
 .actionItem {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.actionItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.actionImage {
+  width: 70px;
+  height: 70px;
+  z-index: 1;
 }
 
 /* Facts and Figures */
@@ -86,34 +109,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* News and Journal Sections */
-.newsSection, .journalSection {
-  padding: 50px 20px;
-}
-
-.newsGrid, .journalGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.newsItem, .journalItem {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.newsItem button, .journalItem button {
-  background-color: #004247;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.newsItem button:hover, .journalItem button:hover {
-  background-color: #013033;
+.factBox img {
+  width: 50px;
+  margin-bottom: 15px;
 }
